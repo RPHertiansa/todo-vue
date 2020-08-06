@@ -1,0 +1,21 @@
+body { 
+    background: url(./image/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Recursive, sans-serif !important;
+    color: white !important;
+}
+main {
+    margin-top: 50px;
+    font-family: Roboto, sans-serif !important;
+    color: white !important;
+}
+.table{
+    font-family: Roboto, sans-serif !important;
+    color: white !important;
+}
+h1 {
+    text-align: center;
+}
