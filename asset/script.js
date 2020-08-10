@@ -19,7 +19,7 @@ let app = new Vue({
     //method untuk menambahkan dan menghapus task. 
     methods: {
         loadLocalStorage(){
-            const ls = JSON.parse(localStorage.getItem('todos'))
+             
             if(ls == null){
                 return;
             }
@@ -30,9 +30,11 @@ let app = new Vue({
             this.todos.push(this.todo);
             this.todo = "";
         },
-        checkTodo() {
-            todo.style.textDecoration = 'line-through'
-        },
+        markComplete() {
+            this.todo.completed = !this.todo.completed
+           
+         },
+        
         deleteTodo(index){
             this.todos.splice(index, 1);
         }

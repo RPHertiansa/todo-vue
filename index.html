@@ -59,9 +59,9 @@
                     </thead>
                     <tbody v-for="(todo, index) in todos"  :key="index">
                         
-                        <td v-bind:style="{todo: checkTodo}">{{todo}}</td>
+                        <td  v-bind:class="{'is-complete': todo.completed}">{{todo}}</td>
                         <td>
-                            <button class="btn btn-success check" @click="checkTodo(index)">
+                            <button class="btn btn-success check" @click="markComplete()">
                                 <i class="fa fa-check-square" aria-hidden="true"></i>
                             </button>
                             <button class="btn btn-danger" @click="deleteTodo(index)">
